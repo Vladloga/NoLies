@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoLies</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" media="screen"/></head>
+	<script defer src="jquery.js"></script>
+    <script defer src="popup.js"></script>
+<body>
+	<div hidden id=login_container>
+		<h1> Login with Trinity </h1>
+        <input type=text id='username' name='username' placeholder='Username'>
+        <br>
+        <input type=password id='password' name='password' placeholder='Password'>
+        <br>		
+        <button id=login_btn>Log in</button>
+		<br><br>
+		<a href="http://trinitygames.xyz/account/register" target="_blank" style="font-size: 15px">Don't have an account?</a>
+	</div>
+    <div id=main>
+        <div id=top>
+            <div id=top-circle>
+                <img id=backcircle src="resources/Circle.svg">
+                <svg version="1.1" id="Layer_1" class="progress" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 300 280.3" style="enable-background:new 0 0 300 280.3;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:none;stroke-width:15;stroke-miterlimit:10;}
+                </style>
+                <path class="st0" d="M220.9,272.4c42.4-24.5,70.9-70.3,70.9-122.8C291.7,71.3,228.3,7.9,150,7.9S8.3,71.3,8.3,149.6
+                    c0,52.5,28.5,98.3,70.9,122.8"/>
+                </svg>
+            </div>
+            <h1 id=scoretext class=prim-color></h1>
+            <p class=prim-color id=score></p>
+        </div>
+        <div id=sites>
+            <h1 class="prim-color">WE SUGGEST:</h1>
+        </div>
+        <div id=bot>
+            <h1 class="prim-color">RATE THIS SITE:</h1>
+            <div id=dots>
+                <div class="secbg-color ratebtn" id="star1"></div>
+                <div class="secbg-color ratebtn" id="star2"></div> 
+                <div class="secbg-color ratebtn" id="star3"></div> 
+                <div class="secbg-color ratebtn" id="star4"></div> 
+                <div class="secbg-color ratebtn" id="star5"></div>
+            </div>
+			<button id = "login_button" hidden> Login with Trinity </button>
+        </div>
+    </div>
+</body>
